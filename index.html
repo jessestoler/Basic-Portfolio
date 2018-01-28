@@ -6,26 +6,32 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <style>
         a {text-decoration: none;}
-        body {background-color: grey;
-            height: 4000px;
+        body {background-color: lightgray;
+            height: 1400px;
             padding-left: 50px;
             padding-right: 50px;
-              width: 1260px;}
+              width: 1260px;}    
+        #gray {background-color: darkgray;
+            color: white;
+            height: 125px;
+            line-height: 125px;
+            text-align: center;}      
         header {background-color: white;
-        height: 75px;}  
+        height: 75px;
+        margin-bottom: 20px;}  
         #links {float: right;
             line-height: 75px;} 
         #links a {color: gray;}
         #main {background-color: white;
             color: gray;
-            height: 2000px;
+            float: left;
+            height: 650px;
             padding-left: 25px;
             padding-right: 25px;
             width: 650px;} 
         #main h2 {color: teal;}
         #main img {float: left;}
-        #main p {
-            float: right;}          
+        #main p {float: right;}          
         #myName {background-color: teal;
         color: white;
         float: left;
@@ -34,6 +40,16 @@
     line-height: 75px;
     text-align: center;
     width: 300px;}
+        #sidebar {background-color: white;
+            color: teal;
+            float: right;
+            height: 200px;
+            padding-left: 15px;
+            padding-right: 15px;
+            text-align: center;
+            width: 270px;}   
+        #teal {background-color: teal;
+                height: 25px;}       
     </style>
     <title>Document</title>
 </head>
@@ -53,7 +69,7 @@
 <div id="main">
    <h2>About Me</h2>
    <hr>
- <img src="assets/images/profile.png"  
+ <img src="assets/images/profile.png">  
  <p>Hi, I'm Jesse Stoler. I'm from Pocatello, Idaho, and no, I don't need your 
      pity. I started teaching myself to code about six months ago, and fell in 
      love with it. It's both intellectually and creatively fulfilling.<br><br>Hi, I'm Jesse Stoler. I'm from Pocatello, Idaho, and no, I don't need your 
@@ -61,7 +77,20 @@
      love with it. It's both intellectually and creatively fulfilling.<br><br>Hi, I'm Jesse Stoler. I'm from Pocatello, Idaho, and no, I don't need your 
      pity. I started teaching myself to code about six months ago, and fell in 
      love with it. It's both intellectually and creatively fulfilling.</p>
-        
+</div> 
+<div id="sidebar">
+<h2>Connect with Me</h2>
+<hr>
+<a href="https://github.com/jessestoler"><img src="assets/images/github.png"></a>
+<a href="https://www.linkedin.com/in/jesse-stoler-540a6268/"><img src="assets/images/linkedin.png"></a>
+<a href="https://stackoverflow.com/users/9248905/j-sto?tab=profile"><img src="assets/images/stackOverflow.png"></a>     
+</div>       
+<!--<footer>
+<div id="teal">
+</div>
+<div id="gray">
+<p>&copy;Copyright 2018 Jesse Stoler</p>    
 </div>    
+</footer>-->   
 </body>
 </html>
