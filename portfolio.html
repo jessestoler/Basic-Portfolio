@@ -24,11 +24,7 @@
             margin-bottom: 20px;
             padding-right: 115px;} 
             
-    .imageNames {background-color: teal;
-                color: white;
-                height: 30px;
-                width: 150px;
-                z-index: 2;}        
+       
         
     #links {float: right;
             line-height: 75px;} 
@@ -49,10 +45,18 @@
             width: 650px;} 
         
     #main h2 {color: teal;}
+
+    .mainImages p {background-color: teal;
+        bottom: 55px;
+        color: white;
+        height: 30px;
+        position: relative;
+        text-align: center;
+        width: 100%;}
         
-    #main img {height: 150px;
+    #main img {height: 130px;
                 margin-top: 15px;
-                width: 150px;
+                width: 130px;
                 z-index: 1;}
 
     #mainLeft {float: left;}            
@@ -107,13 +111,28 @@
    <h2>Portfolio</h2>
    <hr>
 <div id="mainLeft">
-<img class="imageNames" src="assets/images/portfolioOne.jpg">
-<img class="imageNames" src="assets/images/portfolioThree.jpg">
-<img class="imageNames" src="assets/images/portfolioFive.jpg"> 
+<div class="mainImages">  
+<img src="assets/images/portfolioOne.jpg">
+<p>Hangman</p>
+</div>
+<div class="mainImages">  
+<img src="assets/images/portfolioThree.jpg">
+<p>Trivia Game</p>
+</div>
+<div class="mainImages">  
+<img src="assets/images/portfolioFive.jpg">
+<p>Rock Paper Scissors</p>
+</div>
 </div> 
 <div id="mainRight">
-<img class="imageNames" src="assets/images/portfolioTwo.jpg">
-<img class="imageNames" src="assets/images/portfolioFour.jpg">  
+<div class="mainImages">  
+<img src="assets/images/portfolioTwo.jpg">
+<p>RPG Game</p>
+</div>
+<div class="mainImages">  
+<img src="assets/images/portfolioFive.jpg">
+<p>Rutgers Info Widget</p>
+</div> 
 </div>
 </div> 
 <div id="sidebar">
