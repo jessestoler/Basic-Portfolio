@@ -5,29 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <style>
-    a       {text-decoration: none;}
+      a       {text-decoration: none;}
     
-    body    {background-color: lightgray;
-            height: 1400px;
-            padding-left: 50px;
-            padding-right: 50px;
-            width: 1260px;}    
+    body {height: 1000px;
+        margin: 0 auto;} 
+            
+    footer {
+        height: 105px;
+        position: absolute;
+           top: 850px;
+            width: 100%;}   
+            
+    form {
+        margin-top: 20px;}        
     
-    #gray   {background-color: darkgray;
+    #gray   {background-color: #666666;
             color: white;
-            height: 125px;
-            line-height: 125px;
-            text-align: center;}         
+            height: 95px;
+            line-height: 95px;
+            position: absolute;
+            text-align: center;
+            top: 10px;
+            width: 100%;
+            }      
         
     header {background-color: white;
-            height: 75px;
-            margin-bottom: 20px;
-            padding-right: 115px;} 
+            height: 85px;
+            line-height: 85px;
+            padding-right: 115px;}
             
-       
+    input {height: 20px;
+        margin-bottom: 10px;
+        width: 100%;} 
+        
+    input[type=submit] {background-color: teal;
+                        color: white;
+                        height: 40px;
+                        width: 20%;}    
         
     #links {float: right;
-            line-height: 75px;} 
+            left: 850px;
+            position: absolute;} 
     
     #links a {border-right: 1px solid gray;
             color: gray;
@@ -39,56 +57,71 @@
     #main {background-color: white;
             color: gray;
             float: left;
-            height: 650px;
-            padding-left: 25px;
+            height: 700px;
+            padding-left: 20px;
             padding-right: 25px;
-            width: 650px;} 
+            width: 650px;}       
         
-    #main h2 {color: teal;}
-
-    .mainImages p {background-color: teal;
-        bottom: 55px;
-        color: white;
-        height: 30px;
-        position: relative;
-        text-align: center;
-        width: 100%;}
+    #main h2 {color: teal;
+                padding-bottom: 30px;
+                margin-top: 45px;
+                border-bottom: 3px solid lightgray;}
         
-    #main img {height: 130px;
-                margin-top: 15px;
-                width: 130px;
-                z-index: 1;}
+    #main img {
+                height: 150px;
+                padding-bottom: 5px;
+                padding-right: 10px;
+                
+                width: 200px;}
 
-    #mainLeft {float: left;}            
+    #mainLeft {float: left;
+                }
+        
+    #main p {
+        font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;} 
 
-    #mainLeft img {display: block;}
-
-    #mainRight {float: right;}
+    #mainRight {float: right;
+                }    
     
-    #mainRight img {display: block;}
-        
-    #main p {float: right;}          
+    #message {height: 200px;}
         
     #myName {background-color: teal;
             color: white;
             float: left;
             font-family: "Georgia", Times, Times New Roman, serif;
-            height: 75px;
-            line-height: 75px;
+            height: 85px;
+            line-height: 85px;
+            margin-left: 145px;
+            padding-bottom: 50px;
+            
             text-align: center;
             width: 300px;}
         
     #sidebar {background-color: white;
             color: teal;
             float: right;
-            height: 200px;
-            padding-left: 15px;
-            padding-right: 15px;
+            height: 190px;
+            left: -250px;
+            padding-left: 5px;
+            padding-right: 5px;
+            position: relative;
             text-align: center;
-            width: 270px;}   
+            width: 270px;}  
+            
+    #sidebar h2 {border-bottom: 2px solid lightgray;
+                    padding-bottom: 20px;}      
         
     #teal {background-color: teal;
-            height: 25px;} 
+            
+            height: 10px;}
+
+    #wrapper    {background-color: lightgray;
+            height: 800px;
+            padding-top: 50px;
+            padding-left: 145px;
+            padding-right: 215px;
+            position: absolute;
+            width: 1260px;} 
             
            
     </style>
@@ -107,9 +140,10 @@
 </ul>    
 </div>
 </header>
+<div id="wrapper">
 <div id="main">
    <h2>Portfolio</h2>
-   <hr>
+   
 <div id="mainLeft">
 <div class="mainImages">  
 <img src="assets/images/portfolioOne.jpg">
@@ -137,17 +171,18 @@
 </div> 
 <div id="sidebar">
 <h2>Connect with Me</h2>
-<hr>
+
 <a href="https://github.com/jessestoler"><img src="assets/images/github.png"></a>
 <a href="https://www.linkedin.com/in/jesse-stoler-540a6268/"><img src="assets/images/linkedin.png"></a>
 <a href="https://stackoverflow.com/users/9248905/j-sto?tab=profile"><img src="assets/images/stackOverflow.png"></a>     
+</div>
 </div>       
-<!--<footer>
+<footer>
 <div id="teal">
 </div>
 <div id="gray">
 <p>&copy;Copyright 2018 Jesse Stoler</p>    
 </div>    
-</footer>-->   
+</footer>   
 </body>
 </html>
